@@ -207,6 +207,11 @@ class XCTestIOSDevice(
             }
         }
 
+        if (mutable.containsKey("notifications")) {
+            logger.info("SpringBoard needed restart. Restart XCTestRunner.")
+            client.restartXCTestRunner()
+        }
+
         execute { client.setPermissions(mutable) }
     }
 
