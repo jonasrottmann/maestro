@@ -32,6 +32,7 @@ object LocalSimulatorUtils {
         "medialibrary",
         "microphone",
         "motion",
+        "notifications",
         "photos",
         "reminders",
         "siri",
